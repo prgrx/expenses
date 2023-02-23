@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/index.js" type="module"></script>
+</head>
+
+<body>
+
+	<expense-tracker>
+		<template id="expense-tracker">
+			<h2>Expense Tracker</h2>
+			<div>
+			  <label for="input-description">Description</label>
+			  <input id="input-description" type="text" />
+			</div>
+			<div>
+			  <label for="input-amount">Amount</label>
+			  <input id="input-amount" type="number" />
+			</div>
+			<button id="button-add">Add</button>
+			<div>
+			  <h3>Transaction History</h3>
+			  <ul id="transaction-list"></ul>
+			  <p>Balance: <span id="balance"></span></p>
+			</div>
+		  </template>
+	</expense-tracker>
+
+</body>
+
+</html>
