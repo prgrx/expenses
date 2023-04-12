@@ -6,6 +6,17 @@ class ExpenseTracker extends HTMLElement {
   
 	  const template = document.getElementById('expense-tracker').content;
 	  const shadowRoot = this.attachShadow({ mode: 'open' });
+	
+	shadowRoot.innerHTML = `
+		<style>
+			#input-amount {
+				width: 50px;
+			}
+		</style>
+	
+	`
+	  
+	
 	  shadowRoot.appendChild(template.cloneNode(true));
   
 	  this.descriptionInput = this.shadowRoot.getElementById('input-description');
